@@ -1,9 +1,11 @@
 module.exports = {
-  devServer: {
-    proxy: {
-        'send/': {
-            target: 'http://localhost:8000'
+    outputDir: '../dist',
+    assetsDir: 'static',
+    devServer: {
+        proxy: {
+            'send/': {
+                target: 'http://localhost:8000'
+            }
         }
     }
-  }
 }

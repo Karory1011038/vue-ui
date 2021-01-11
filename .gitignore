@@ -1,1 +1,3 @@
 /backend/venv/
+/dist/static/admin/
+/dist/static/rest_framework/

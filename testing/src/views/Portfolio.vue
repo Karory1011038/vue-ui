@@ -34,16 +34,16 @@
         </div>
        <div class="any-work"> <transition-group mode="out-in" enter-active-class="animate__animated animate__fadeIn"
                               leave-active-class="animate__animated animate__fadeOut"><img :key="WhatisPortfolioImg" class="portfolio-img"
-                                   :src="'http://192.168.1.175/images/portfolio-' + WhatisPortfolioImg" alt="">
+                                   :src="'/static/images/portfolio-' + WhatisPortfolioImg" alt="">
 
             <div v-if="portfoliocounter === 1" @click="portfoliocounter--"  class="pre-work"><a  class="unlinked" href="#"><img
                     class="arrow-img left"
-                    src="http://192.168.1.175/images/portfolio-arrow.svg"
+                    src="/static/images/portfolio-arrow.svg"
                     alt="">Предыдущий проект </a>
             </div>
             <div v-if="portfoliocounter === 0" @click="portfoliocounter++" class="next-work"><a class="unlinked" href="#">Следующий проект <img
                     class="arrow-img"
-                    src="http://192.168.1.175/images/portfolio-arrow.svg"
+                    src="/static/images/portfolio-arrow.svg"
                     alt=""></a>
             </div>
            </transition-group>

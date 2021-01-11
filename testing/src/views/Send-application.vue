@@ -88,7 +88,7 @@
 <style scoped>
     .content-block {
         position: relative;
-        background: url(http://192.168.1.175/images/price_background.jpg) no-repeat center center fixed;
+        background: url(/static/images/price_background.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

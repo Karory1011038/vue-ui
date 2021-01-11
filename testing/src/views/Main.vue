@@ -1,7 +1,7 @@
 <template>
     <div class="content-block">
         <h1 class="meeting-title">Давайте знакомиться ближе</h1>
-        <img class="meeting-img" src="http://192.168.1.175/images/znakomstvo.jpg" alt="">
+        <img class="meeting-img" src="/static/images/znakomstvo.jpg" alt="">
         <div class="gradiented"></div>
         <div class="black-text-block meeting-text-one">
             <h2 class="t-title"><span class="blue">S</span>ai<span class="blue">S</span>tudio</h2>
@@ -63,15 +63,15 @@
                     Спешка портит качество</p>
             </div>
         </div>
-        <img class="first-arrow" src="http://192.168.1.175/images/arrow-price.svg" alt="">
-        <img class="second-arrow" src="http://192.168.1.175/images/arrow-price.svg" alt="">
+        <img class="first-arrow" src="/static/images/arrow-price.svg" alt="">
+        <img class="second-arrow" src="/static/images/arrow-price.svg" alt="">
     </div>
     <div class="content-block">
         <div class="stage">
             <h2 class="stage-title ">Этапы выполнения заказа</h2>
             <transition-group mode="out-in" :enter-active-class=enterclass
                               :leave-active-class=leaveclass>
-                <img :src="'http://192.168.1.175/images/' + WhatisStageImg" :key="WhatisStageImg" alt=""
+                <img :src="'/static/images/' + WhatisStageImg" :key="WhatisStageImg" alt=""
                      class="stage-image">
 
 
@@ -136,7 +136,7 @@
     </div>
     <div class="portfolio">
         <div class="top-block">
-            <img class="portfolio-img" src="http://192.168.1.175/images/portfolio-1.jpg" alt="">
+            <img class="portfolio-img" src="/static/images/portfolio-1.jpg" alt="">
             <router-link to="/portfolio">
             <div v-on:click="showinfo = !showinfo" class="portfolio-text ">Landing Page для фирмы свадебного фотографа
             </div>
@@ -396,7 +396,7 @@
         width: 50px;
         bottom: 9%;
         right: 7%;
-        background-image: url(http://192.168.1.175/images/arrow-left.svg)
+        background-image: url(/static/images/arrow-left.svg)
     }
 
     .arrow-right {
@@ -404,7 +404,7 @@
         width: 50px;
         bottom: 9%;
         right: 2%;
-        background-image: url(http://192.168.1.175/images/arrow-right.svg);
+        background-image: url(/static/images/arrow-right.svg);
     }
 
 

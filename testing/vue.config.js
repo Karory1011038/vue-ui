@@ -1,6 +1,6 @@
 module.exports = {
     outputDir: '../dist',
-    assetsDir: 'static',
+    assetsDir: 'static/vue',
     devServer: {
         proxy: {
             'send/': {

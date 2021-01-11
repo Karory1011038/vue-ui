@@ -7,6 +7,6 @@ from django.conf.urls.static import static
 from django.views.static import serve
 
 urlpatterns = static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + [
-    path('send/', views.send_messange, name='send_messange'),
     url(r'^$', index_view, name='index'),
+    path('send/', views.send_messange, name='send_messange'),
 ]

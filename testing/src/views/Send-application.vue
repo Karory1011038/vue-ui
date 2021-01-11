@@ -45,7 +45,7 @@
             send_form: function () {
                 if (this.data.phone.length < 13){ alert('Заполните пожалуйста номер телефона')}
                 else {const vm = this;
-                axios.post('http://192.168.1.175:8080/send/', vm.data)
+                axios.post(location.origin+'/send/', vm.data)
                 this.data.name = ''
                 this.data.phone = ''
                 this.data.price = ''

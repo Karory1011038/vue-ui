@@ -260,7 +260,7 @@
     .black-text-block {
         position: absolute;
         background-color: #000000;
-        opacity: 68%;
+        opacity: 68% !important;
         color: white;
     }
 

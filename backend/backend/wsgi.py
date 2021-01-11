@@ -8,9 +8,14 @@ https://docs.djangoproject.com/en/3.1/howto/deployment/wsgi/
 """
 
 import os
+import sys
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.backend.settings')
+BASE_DIR = os.path.dirname(os.path.realpath(__file__))
+
+sys.path.append(os.path.join(BASE_DIR, '../'))
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.settings')
 
 application = get_wsgi_application()

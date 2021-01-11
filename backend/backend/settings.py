@@ -28,8 +28,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
-sys.path.append(BASE_DIR)
-
 # Application definition
 
 INSTALLED_APPS = [

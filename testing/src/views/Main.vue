@@ -259,8 +259,8 @@
 
     .black-text-block {
         position: absolute;
-        background-color: #000000;
-        opacity: 68% !important;
+        background-color: #000;
+        opacity:.68;
         color: white;
     }
 

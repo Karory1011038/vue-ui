@@ -16,6 +16,6 @@ BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 
 sys.path.append(os.path.join(BASE_DIR, '../'))
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.backend.settings')
 
 application = get_wsgi_application()
